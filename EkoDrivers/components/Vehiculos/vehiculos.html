@@ -1,0 +1,29 @@
+<div data-role="view" data-title="Vehículos" data-layout="main" data-model="app.Vehiculos" data-show="app.Vehiculos.onShow"
+	data-after-show="app.Vehiculos.afterShow" id="VehiculosScreen" class="screen" data-before-show="app.Vehiculos.inicializa">
+	<header data-role="header">
+		<div data-role="navbar" class="header-text"><span data-role="view-title"></span>
+			<a data-role="button" href="#appDrawer" data-rel="drawer" data-align="left"><i class="fa fa-bars" aria-hidden="true"></i></a>
+			<a data-align="right" class="fa fa-reply" href="components/Menu/Menu.html" aria-hidden="true" data-role="button"></a>
+		</div>
+	</header>
+
+	<div>
+		<ul data-role="listview" id="listadoVehiculos" data-click="app.Vehiculos.listViewClick" data-fixed-headers="true" data-append-on-refresh="false" data-pull-to-refresh="true" data-bind="source: datos" data-template="templateVehiculos">
+		</ul>
+	</div>
+	<script type="text/x-kendo-template" id="templateVehiculos" data-header-template="headerVeh-template">
+		<h3 class="item-title">Vehículo: #: name # <span class="pull-right"><i class="fa fa-chevron-right" aria-hidden="true"></i></span></h3>
+	</script>
+	<script type="text/x-kendo-template" id="headerVeh-template">
+	
+		#if(value==="Creado"){#
+			<div class="alert alert-info">
+		#}else if(value==="Habilitado"){#
+			<div class="alert alert-success">
+		#}else if(value==="Inhabilitado"){#
+			<div class="alert alert-danger">
+		#}#
+				#: value #
+			</div>
+	</script>
+</div>
