@@ -1,0 +1,20 @@
+<div data-role="view" data-title="Rutas" data-layout="main" data-model="app.Rutas" data-show="app.Rutas.onShow" data-after-show="app.Rutas.afterShow"
+    id="RutasScreen" class="screen">
+	<header data-role="header">
+		<div data-role="navbar" class="header-text"><span data-role="view-title"></span>
+			<a data-role="button" href="#appDrawer" data-rel="drawer" data-align="left" data-icon="drawer-button"></a>
+			<a data-role="button" onclick="SubeNovedad()" data-align="right" class="fa fa-exclamation-circle"></a>
+			<a data-role="button" onclick="FotoCumplido()" data-align="right" class="fa fa-camera"></a>
+		</div>
+	</header>
+    </header>
+    <!-- START_CUSTOM_CODE_Rutas -->
+    <!-- Add custom code here. For more information about custom code, see http://docs.telerik.com/platform/screenbuilder/troubleshooting/how-to-keep-custom-code-changes -->
+    <ul class="form-content" data-role="listview" data-style="inset">
+        <li id="rutas" class="form-content-item">
+            <div id="map" class="mapView"></div>
+        </li>
+    </ul>
+
+</div>
+<!-- END_CUSTOM_CODE_Rutas -->

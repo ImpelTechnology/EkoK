@@ -1,0 +1,110 @@
+<div data-role="view" data-title="Novedades" data-layout="main" data-model="app.Novedades" data-show="app.Novedades.onShow" data-after-show="app.Novedades.afterShow"
+	id="NovedadesScreen" class="screen" data-before-show="app.Novedades.inicializa" data-init="app.Novedades.Init">
+	<header data-role="header">
+		<div data-role="navbar" class="header-text"><span data-role="view-title"></span>
+			<a data-role="button" href="#appDrawer" data-rel="drawer" data-align="left" data-icon="drawer-button"></a>
+			<a data-role="button"  data-align="right" class="fa fa-check"></a>
+		</div>
+	</header>
+	<div class="content" style=" padding: 30px 15px;">
+        <div class="container">
+            <form class="form-horizontal" id="registro">
+                <div class="form-group">
+                    <div class="col-xs-12"> 
+						<label>Servicio</label>
+						<input type="number" class="form-control" id="Servicio" > </div>
+                </div>
+                <div class="form-group no-border">
+                    <div class="col-xs-12"> 
+						<label>Cliente</label>
+						<input type="text" class="form-control" id="Cliente" > </div>
+                </div>
+                <div class="form-group no-border">
+                    <div class="col-xs-12"> 
+						<label>Vehículo</label>
+						<input type="text" class="form-control" id="Vehiculo" > </div>
+                </div>
+                <div class="form-group no-border">
+                    <div class="col-xs-12"> 
+						<label>Fecha</label>
+						<input type="date" class="form-control" id="FechaC" onkeyup="javascript:this.value='';"> 
+					</div>
+                </div>
+				<div class="form-group">
+                    <div class="col-xs-12"> 
+						<label>Manifiesto</label>
+						<input type="number" class="form-control" id="Manifiesto" > </div>
+                </div>
+                <div class="form-group no-border">
+                    <div class="col-xs-12"> 
+						<label>Tipo</label>
+						<input type="text" class="form-control" id="Tipo" > </div>
+                </div>
+				<div class="form-group">
+                    <div class="col-xs-12"> 
+						<label>Justificación Otro</label>
+						<input type="text" class="form-control" id="JustifOtro" > </div>
+                </div>
+				<div class="form-group">
+                    <div class="col-xs-12"> 
+						<label>Costo</label>
+						<input type="currency" class="form-control" id="Costo" > </div>
+                </div>
+				<div class="form-group no-border">
+                    <div class="col-xs-12"> 
+						<label>Responsable</label>
+						<input type="text" class="form-control" id="Responsable" > 
+					</div>
+                </div>
+                <div class="form-group no-border">
+                    <div class="col-xs-12"> 
+						<label>Responsabe Tkarga</label>
+						<input type="text" class="form-control" id="ResponsableTK" > 
+					</div>
+                </div>
+                <div class="form-group">
+                    <div class="col-xs-12"> 
+						<label>Reportó a tiempo</label>
+						<p>	<input type="checkbox" id="ReportoATiempo"></p>
+					</div>
+                </div>
+                <div class="form-group no-border">
+                    <div class="col-xs-12"> 
+						<label>Tiempo de Respuesta</label>
+						<input type="text" class="form-control" id="TiempoRespuesta" >
+					</div>
+                </div>
+				<div class="form-group">
+                    <div class="col-xs-12"> 
+						<label>Retención de Pago</label>
+						<p><input type="checkbox" id="RetencionPago"></p>
+					</div>
+                </div>
+                <div class="form-group">
+                    <div class="col-xs-12"> 
+						<label>PQR</label>
+						<p><input type="checkbox" id="PQR"></p>
+					</div>
+				</div>
+				<div class="form-group">
+                    <div class="col-xs-12"> 
+						<label>Detalle</label>
+						<input type="text" class="form-control" id="Detalle" > 
+					</div>
+                </div>
+				<div class="form-group">
+                    <div class="col-xs-12"> 
+						<label>Plan de Acción</label>
+						<input type="text" class="form-control" id="PlanAccion" > 
+					</div>
+                </div>
+				<div class="form-group">
+                    <div class="col-xs-12"> 
+						<label>Resultado</label>
+						<input type="text" class="form-control" id="Resultado" > 
+					</div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

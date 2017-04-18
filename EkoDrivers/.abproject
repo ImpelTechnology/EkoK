@@ -3,10 +3,10 @@
   "ProjectGuid": "91911845-3cc1-48e4-810d-451ab889a942",
   "projectVersion": 1,
   "AppIdentifier": "com.telerik.EkoDrivers",
-  "DisplayName": "EkoDrivers",
+  "DisplayName": "EkoKarga",
   "Author": "",
   "Description": "EkoDrivers",
-  "BundleVersion": "1.0",
+  "BundleVersion": "1.6",
   "AndroidVersionCode": "1",
   "iOSDeviceFamily": [
     "1",

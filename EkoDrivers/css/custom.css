@@ -1,0 +1,62 @@
+	
+      .icon-wrapper :hover .mi-icon {
+      background:rgba(0,0,0,0.4);
+      }
+      .icon-wrapper{
+        margin-bottom: 10px;
+      }
+      .fix-editor {
+      display:none;
+      }
+
+      a:hover {
+        text-decoration: none;
+      }
+      #menu{
+        background: #FF3019;
+        }
+        .icon-text{
+          color: white;
+          display: block;
+          margin-bottom: 30px;
+          margin-top: 10px;
+        }
+        .mi-icon{
+          border: 2px solid white;
+          border-radius: 50%;
+          display: block;
+          height: 100%;
+          -moz-transition:.5s;
+          -webkit-transition:.5s;
+          -o-transition:.5s;
+          transition:.5s;
+        }
+        .fa-lg{font-size: 40px;}
+.img-responsive{max-width:100%; height:auto; display: inline-block;}
+.login{padding:30px;}
+.form-control{font-size:18px; }
+.icon-wrapper{cursor: pointer;}
+.form-control, .form-group .form-control{
+	font-weight: 300!important;
+}
+.fondo {
+			background-color: #283890;
+			background-image:linear-gradient(to bottom, #283890 0%, #223077 100%);
+		}
+
+.form-group.no-border .form-control {background-image:none;}
+
+#listadoServ .km-group-title {
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    font-size: 1.2em;
+    font-weight: 300;
+    margin-top: 0;
+    padding: 1.17em 0 0;
+    text-indent: 0;
+}
+.km-text .alert{
+	margin-bottom:0px;
+}
+#NovedadesCrear .km-content{background-color:#f1f1f1;}
+#listadoNovedades li{background-color:#fff;}

@@ -1,0 +1,52 @@
+<div data-role="view" data-title="Perfil" data-layout="main" data-model="app.Perfil" data-show="app.Perfil.onShow" data-after-show="app.Perfil.afterShow"
+	id="PerfilScreen" class="screen" data-before-show="app.Perfil.inicializa">
+	<header data-role="header">
+		<div data-role="navbar" class="header-text">
+			<span data-role="view-title"></span>
+			<a data-role="button" href="#appDrawer" data-rel="drawer" data-align="left" data-icon="drawer-button"></a>
+			<a data-align="right" class="fa fa-reply" href="components/Menu/Menu.html" aria-hidden="true" data-role="button"></a>
+		</div>
+	</header>
+	<div class="content" style=" padding: 30px 15px;">
+        <div class="container">
+            <form class="form-horizontal" id="registro">
+                <div class="form-group">
+                    <div class="col-xs-12">
+						<label>Nombre</label>
+						<input type="text" class="form-control" id="nombreConductor"> 
+					</div>
+                </div>
+                <div class="form-group">
+                    <div class="col-xs-12"> 
+						<label>Identificación</label>
+						<input type="number" class="form-control" id="CedulaConductor"> </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-xs-12"> 
+						<label>Teléfono</label>
+						<input type="tel" class="form-control" id="CelularConductor"> </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-xs-12"> 
+						<label>Dirección</label>
+						<input type="text" class="form-control" id="DireccionConductor" > </div>
+                </div>
+				<div class="form-group">
+                    <div class="col-xs-12"> 
+						<label>e-mail</label>
+						<input type="email" class="form-control" id="EmailConductor" > </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-xs-12"> 
+						<label>No. Licencia de Conducción</label>
+						<input type="number" class="form-control" id="LicenciaConductor" > </div>
+                </div>
+				<div class="form-group no-border">
+                    <div class="col-xs-12"> 
+						<label>Fecha Vencimiento Licencia</label>
+						<input type="date" class="form-control" id="VencLicenciaConductor" > </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

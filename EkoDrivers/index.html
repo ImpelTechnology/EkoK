@@ -5,43 +5,44 @@
     <title></title>
     <meta charset="utf-8">
     <meta name="viewport" content="initial-scale=1, maximum-scale=1, width=device-width">
+    <link href="kendo/styles/kendo.default.min.css" rel="stylesheet">
+    <script src="kendo/js/kendo.mobile.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&amp;libraries=geometry"></script>
+    <link href="kendo/styles/kendo.common.min.css" rel="stylesheet">
     <link href="kendo/styles/kendo.mobile.all.min.css" rel="stylesheet">
 
     <link href="styles/overrides.css" rel="stylesheet">
     <link href="styles/main.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/material-kit.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/custom.css" rel="stylesheet">
 
-    <script src="cordova.js"></script>
     <script src="kendo/js/jquery.min.js"></script>
-    <script src="kendo/js/kendo.mobile.min.js"></script>
+    <script src="cordova.js"></script>
+    <script src="kendo/js/kendo.all.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js"></script>
+
     <script src="app.js"></script>
 </head>
 
 <body id="kendoUiMobileApp">
     <script src="components/home/index.js"></script>
+	<script src="components/Menu/Menu.js"></script>
+	<script src="components/Vehiculos/vehiculos.js"></script>
+	<script src="components/Servicios/servicios.js"></script>
+	<script src="components/Rutas/rutas.js"></script>
+	<script src="components/perfil/perfil.js"></script>
+	<script src="components/Novedades/novedades.js"></script>
+	<script src="components/NuevaNovedad/nuevanovedad.js"></script>
+	<script src="components/Buzon/buzon.js"></script>
+	
     <div data-role="layout" data-id="main">
         <header data-role="header">
             <div data-role="navbar">
                 <span data-role="view-title"></span>
             </div>
         </header>
-        <footer data-role="footer">
-            <div data-role="tabstrip" id="navigation-container">
-                <a href="components/home/view.html" data-icon="home"><span class="navigation-link-text" data-bind="text: strings.home.title"></span></a>
-            </div>
-            <div id="navigation-container-more" style="display: none">
-            </div>
-        </footer>
-    </div>
-
-
-    <div id="navigation-show-more-view" data-role="view" data-title="Show More" data-layout="main">
-        <header data-role="header">
-            <div data-role="navbar">
-                <span data-bind="text: strings._app.showMoreTitle"></span>
-            </div>
-        </header>
-        <ul data-role="listview" data-style="inset" data-click="app.listViewClick">
-        </ul>
     </div>
 
     <div data-role="layout" data-id="main-nonav">
@@ -50,8 +51,6 @@
                 <span data-role="view-title"></span>
             </div>
         </header>
-        <footer data-role="footer">
-        </footer>
     </div>
     <div id="notify" class="notify-pop-up">
         <span class="notify-pop-up__content"></span>
@@ -61,7 +60,24 @@
 
     <!-- START_CUSTOM_CODE_kendoUiMobileApp -->
     <!-- Add custom code here. For more information about custom code, see http://docs.telerik.com/platform/screenbuilder/troubleshooting/how-to-keep-custom-code-changes -->
-
+	<div id="appDrawer" data-role="drawer" data-title="Menu" data-before-show="beforeDrawerShow" class="km-vertical-tabstrip"  >
+        <header data-role="header">
+			<div data-role="navbar">
+				<span data-role="view-title"></span>
+			</div>
+		</header>
+		<div class="content" style="background-color: #ffffff; border-right-style: inset; width: 100%;height: 100%;border-color: #2E3191;vertical-align: middle;">
+			<div class="container" style="vertical-align: middle;">
+				<ul class="nav nav-pills-icons nav-stacked">
+					<li><a onclick="perfil()"><i class="fa fa-user fa-fw" aria-hidden="true"></i> Perfil</a></li>
+					<li><a onclick="vehiculos()" ><i class="fa fa-car fa-fw" aria-hidden="true"></i> Mis vehículos</a></li>
+					<li><a onclick="novedades()"><i class="fa fa-exclamation fa-fw" aria-hidden="true"></i> Novedades</a></li>
+					<li><a onclick="buzon()"><i class="fa fa-archive fa-fw" aria-hidden="true"></i> Buzón</a></li>
+					<li><a onclick="CerrarApp()"> <i class="fa fa-times fa-fw" aria-hidden="true"></i> Salir</a></li>
+				</ul>
+			</div>
+		</div>
+    </div>
     <!-- END_CUSTOM_CODE_kendoUiMobileApp -->
 </body>
 

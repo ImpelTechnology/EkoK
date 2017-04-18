@@ -1,0 +1,19 @@
+<div data-role="view" data-title="Novedades" data-layout="main" data-model="app.NovedadesCrear" data-show="app.NovedadesCrear.onShow" data-after-show="app.NovedadesCrear.afterShow" id="NovedadesCrear" class="screen" data-before-show="app.NovedadesCrear.inicializa" data-init="app.NovedadesCrear.onInit">
+	<header data-role="header">
+		<div data-role="navbar" class="header-text"><span data-role="view-title"></span>
+			<a data-role="button" onclick="NuevaNovedad2()" data-align="left" class="fa fa-plus" aria-hidden="true"></a>
+			<a data-align="right" class="fa fa-reply" href="components/Menu/Menu.html" aria-hidden="true" data-role="button"></a>
+		</div>
+	</header>
+	<div>
+		<ul data-role="listview" id="listadoNovedades" data-click="app.NovedadesCrear.listViewClick" data-fixed-headers="true" data-append-on-refresh="false" data-pull-to-refresh="true" data-bind="source: datos" data-template="NovedadesTemplate">
+		</ul>
+	</div>
+	<script type="text/x-kendo-template" id="NovedadesTemplate">
+		<div>
+			<h3 class="item-title">Novedad: #: Novedad #</h3>
+			<h6>Tipo: #: Tipo #</h6>
+			<h6>Vehículo: #: Vehiculo #</h6>
+		</div>
+	</script>
+</div>

@@ -1,15 +1,47 @@
-<div data-role="view" data-title="View" data-layout="main" data-model="app.home" data-show="app.home.onShow" data-after-show="app.home.afterShow" id="homeScreen" class="screen">
-    <header data-role="header">
-        <div data-role="navbar" class="header-text">
-
-            <span data-bind="text: strings.home.title"></span>
-
-        </div>
-    </header>
-
-
-    <!-- START_CUSTOM_CODE_home -->
-    <!-- Add custom code here. For more information about custom code, see http://docs.telerik.com/platform/screenbuilder/troubleshooting/how-to-keep-custom-code-changes -->
-
-    <!-- END_CUSTOM_CODE_home -->
+<div data-role="view" data-title="View" data-layout="main-nonav" data-model="app.home" data-show="app.home.onShow" data-after-show="app.home.afterShow"
+	id="homeScreen" class="screen">
+	<header data-role="header">
+		<div data-role="navbar" class="header-text">  </div>
+	</header>
+	<div data-role="content" class="general">
+		<!--  <div style="width:70%; background: white;" class="blanco">    value: logInModel.email-->
+		<div class="login">
+			<div class="text-center" style="width:100%;">
+				<img src="images/logo.png" class="img-responsive" alt="logo">
+			</div>
+			<form>
+				<div class="form-group">
+					<div class="col-xs-12">
+						<input type="text" class="form-control" id="email" placeholder="ID" required="true" autofocus "></div>
+				</div>
+				<div class="form-group ">
+					<div class="col-xs-12 "> <input type="password" class="form-control" id="password" data-bind="value: logInModel.password" placeholder="Password" required="true"> </div>
+				</div>
+				<div class="button-group button-group-vertical text-center "> 
+					<button id="buttonIniciaSesion" class="btn btn-primary btn-lg btn-block">Ingresar</button>
+				</div>
+			</form>
+		</div>
+		<!-- </div>-->
+	</div>
+	<style>
+		.general {
+			text-align: left;
+			margin: auto;
+		}
+		
+		.blanco {
+			display: inline-block;
+			background-color: #EEE;
+			border: 1px solid #ccc;
+			padding: 0 1rem;
+			margin: 1rem;
+			text-align: left;
+		}
+		
+		.screen {
+			text-align: left;
+			margin: auto;
+		}
+	</style>
 </div>

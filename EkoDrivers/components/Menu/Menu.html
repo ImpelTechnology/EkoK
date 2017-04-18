@@ -1,0 +1,55 @@
+<div data-role="view" data-title="Menu" data-layout="main" data-model="app.Menu" data-show="app.Menu.onShow" data-after-show="app.Menu.afterShow"
+	id="MenuScreen" class="screen" data-before-show="app.Menu.inicializa" data-stretch="true">
+	<header data-role="header">
+		<div data-role="navbar" class="header-text"><span data-role="view-title"></span>
+		<!--	<a data-role="button" href="#appDrawer" data-rel="drawer" data-align="left" data-icon="drawer-button"></a> -->
+		</div>
+	</header>
+	<div class="container fondo" >
+		<div class="row" style="padding-top:54px; padding-bottom:54px;">
+			<div class="col-xs-6 text-center">
+				<a onclick="perfil()" class="icon-wrapper">
+					<span class="fa-stack fa-lg">
+						<i class="mi-icon fa-stack-2x"></i>
+						<i class="fa fa-user fa-stack-1x fa-inverse"></i>
+					</span> 
+					<span class="icon-text clearfix">Perfil
+					</span>
+				</a>
+			</div>
+			<div class="col-xs-6 text-center">
+				<a onclick="vehiculos()" class="icon-wrapper"> 
+					<span class="fa-stack fa-lg">
+						<i class="mi-icon fa-stack-2x "></i>
+						<i class="fa fa-car fa-stack-1x fa-inverse"></i>
+					</span>
+					<span class="icon-text clearfix">Mis Vehículos
+					</span>
+				</a> 
+			</div>
+			<div class="col-xs-6 text-center">
+				<a onclick="novedades()" class="icon-wrapper"> 
+					<span class="fa-stack fa-lg">
+						<i class="mi-icon fa-stack-2x "></i>
+						<i class="fa fa-exclamation fa-stack-1x fa-inverse"></i>
+					</span> 
+					<span class="icon-text clearfix">Novedades
+					</span> 
+				</a>
+			</div>
+			<div class="col-xs-6 text-center">
+				<a onclick="buzon()" class="icon-wrapper"> 
+					<span class="fa-stack fa-lg">
+						<i class="mi-icon fa-stack-2x "></i>
+						<i class="fa fa-archive fa-stack-1x fa-inverse"></i>
+					</span> 
+					<span class="icon-text clearfix">Buzon
+					</span>
+				</a> 
+			</div>
+		</div>
+	</div>
+	<style>
+		
+	</style>
+</div>

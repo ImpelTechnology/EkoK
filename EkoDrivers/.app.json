@@ -6,8 +6,7 @@
       "name": "home",
       "components": [],
       "title": "Home View",
-      "addToNavigation": true,
-      "icon": "home"
+      "addToNavigation": false
     }
   ],
   "dataProviders": [],

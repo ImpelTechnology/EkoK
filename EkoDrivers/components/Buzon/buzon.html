@@ -1,0 +1,24 @@
+<div data-role="view" data-title="Servicios Disponibles" data-layout="main" data-model="app.Serviciosdisponibles" data-show="app.Serviciosdisponibles.onShow" data-after-show="app.Serviciosdisponibles.afterShow" id="ServiciosdisponiblesScreen" class="screen" data-before-show="app.Serviciosdisponibles.inicializa" data-init="app.Serviciosdisponibles.onInit">
+	<header data-role="header">
+		<div data-role="navbar" class="header-text"><span data-role="view-title"></span>
+			<a data-role="button" href="#appDrawer" data-rel="drawer" data-align="left" data-icon="drawer-button"></a>
+			<a data-align="right" class="fa fa-reply" href="components/Menu/Menu.html" aria-hidden="true" data-role="button"></a>
+		</div>
+	</header>
+	<div>
+		<ul data-role="listview" id="listadoServDispo" data-click="app.Serviciosdisponibles.listViewClick" data-fixed-headers="true" data-append-on-refresh="false" data-pull-to-refresh="true" data-bind="source: datos" data-template="templateServDispo" data-header-template="header-templateDispo" data-filterable="{ field: 'vehiculoPosible', operator: 'startswith' }">
+		</ul>
+	</div>
+	<script type="text/x-kendo-template" id="templateServDispo">
+		<div>
+			<h3 class="item-title">Servicio: #: Num_Servicio #</h3>
+			<h6>Origen: #: Origen #</h6>
+			<h6>Destino: #: Destino #</h6>
+		</div>
+	</script>
+	<script type="text/x-kendo-template" id="header-templateDispo">
+		<div style="text-align:center">
+			Servicios posibles para el vehículo de placa #: value #
+		</div>
+	</script>
+</div>
